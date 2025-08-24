@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Table</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 2px solid #34495e;
+            padding: 12px;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        th {
+            background-color: #00bfa5;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #e0f2f1;
+        }
+
+        tr:hover td {
+            background-color: #b2dfdb;
+            transition: background-color 0.3s ease;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📋 Student Information Table</h1>
+
+    <table>
+        <caption>Academic Records of Students</caption>
+        <tr>
+            <th rowspan="2">Heading</th>
+            <th colspan="4">Students</th>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Student List</td>
+            <td>1</td>
+            <td>Victor</td>
+            <td>Computer Science</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Electronics</td>
+            <td>23456</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</td>
+            <td>Electrical</td>
+            <td>34567</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rick</td>
+            <td>Civil</td>
+            <td>45678</td>
+        </tr>
+    </table>
+
+</body>
+</html>
